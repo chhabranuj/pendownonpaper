@@ -1,0 +1,38 @@
+.deleteData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.deleteDataForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 400;
+}
+
+.caution {
+    color: red;
+}
+
+.btns {
+    margin-top: 20px;
+}
+
+.backBtn {
+    background-color: white;
+}
+
+.deleteBtn {
+    margin-left: 25px;
+    background-color: white;
+}
+
+::ng-deep .snackBar {
+    background-color: black;
+    color: white;
+}
+

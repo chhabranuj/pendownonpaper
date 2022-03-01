@@ -1,0 +1,97 @@
+.mainContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 200px;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+
+.card {
+    max-width: 380px;
+    padding: 0 0 15px 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 4px;
+}
+
+.cardImg {
+    width: 300px;
+    height: 400px;
+    opacity: 0.5;
+    border-radius: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 250px
+}
+
+.title {
+    color: white;
+    margin: 0;
+}
+
+.downloadBtn {
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid white;
+    margin-top: 5px;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsorCard {
+    width: 300px;
+    height: 190px;
+    opacity: 0.9;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.sponsorTitle {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+}
+
+.sponsorContent {
+    font-size: medium;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsorSite {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 641px) {
+    .mainContent {
+        justify-content: center;
+        margin-top: 12%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

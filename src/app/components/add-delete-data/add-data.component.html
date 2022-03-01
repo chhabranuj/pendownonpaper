@@ -1,0 +1,19 @@
+<div class="addData">
+    <h3 class="title">Please Enter Details.</h3>
+    <form class="addDataForm" [formGroup]="addData">
+        <mat-form-field appearance="outline" class="name">
+            <mat-label>Name*</mat-label>
+            <input matInput placeholder="Enter Name..." formControlName="name" (input)="name()">
+        </mat-form-field>
+        <span class="caution" *ngIf="nameError">Please enter a unique name.</span>
+        <mat-form-field appearance="outline" class="url">
+            <mat-label>Url*</mat-label>
+            <input matInput placeholder="Enter Url..." formControlName="url" (input)="url()">
+        </mat-form-field>
+        <span class="caution" *ngIf="urlError">Wrong Link.</span>
+    </form>
+    <div class="btns">
+        <button mat-raised-button class="backBtn" (click)="back()">Back</button>
+        <button mat-raised-button class="addBtn" (click)="add()">Add</button>
+    </div>
+</div>

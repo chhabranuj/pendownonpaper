@@ -1,0 +1,19 @@
+<div class="uploadData">
+    <form class="form" [formGroup]="uploadData">
+        <mat-form-field appearance="outline" class="username">
+            <mat-label>Username*</mat-label>
+            <input matInput placeholder="Enter Your Username..." formControlName="username" type="text" (input)="usernameValidation()">
+        </mat-form-field>
+        <span *ngIf="usernameError" class="validation">Username is incorrect.</span>
+        <mat-form-field appearance="outline" class="password">
+            <mat-label>Password*</mat-label>
+            <input matInput placeholder="Enter Your Password..." formControlName="password" type="password" (input)="passwordValidation()">
+        </mat-form-field>
+        <span *ngIf="passwordError" class="validation">Password is incorrect.</span>
+        <button class="enterBtn" mat-raised-button (click)="toAddDeleteData()">
+            Enter
+            <mat-icon class="btnIcon">trending_flat</mat-icon>
+        </button>
+    </form>
+</div>
+<p class="disclaimer">*Disclaimer:- This service is only for the admins of the app.</p>

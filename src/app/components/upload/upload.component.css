@@ -1,0 +1,49 @@
+.uploadData { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 88%;
+    background-color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.password {
+    margin-top: 20px;
+}
+
+.validation {
+    color: red;
+    margin-left: 5px;
+    font-size: smaller;
+}
+
+.enterBtn {
+    background-color: black;
+    color: #e8f6f3;
+    margin-top: 20px;
+}
+
+.btnIcon {
+    color: #e8f6f3;
+    padding-left: 10px;
+}
+
+.disclaimer {
+    margin: 0;
+    color: red;
+    text-align: center;
+    height: 12%;
+    background-color: white;
+    padding: 0 30px;
+}

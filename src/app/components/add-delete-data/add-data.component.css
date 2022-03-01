@@ -1,0 +1,46 @@
+.addData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addDataForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 400;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.url {
+    margin-top: 15px;
+}
+
+.caution {
+    color: red;
+}
+
+.btns {
+    margin-top: 20px;
+}
+
+.backBtn {
+    background-color: white;
+}
+
+.addBtn {
+    margin-left: 25px;
+    background-color: white;
+}
+
+::ng-deep .snackBar {
+    background-color: black;
+    color: white;
+}

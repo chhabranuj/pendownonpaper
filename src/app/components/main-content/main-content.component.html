@@ -1,0 +1,20 @@
+<div class="mainContent">
+    <mat-card class="card" *ngFor="let item of imageObject">
+        <img class="cardImg" src={{item.url}} />
+        <div class="footer">
+          <p class="title">{{item.name}}</p>
+            <a mat-raised-button class="downloadBtn" href={{item.url}} download>Download</a>
+        </div>
+      </mat-card>
+      <div class="sponsors">
+        <mat-card class="sponsorCard" *ngFor="let item of data">
+          <h4 class="sponsorTitle">{{item.title}}</h4>
+            <p class="sponsorContent">{{item.content}}</p>
+            <div class="btns">
+              <button mat-raised-button class="sponsorSite" (click)="visitSite(item.title)">Visit</button>
+              <button mat-raised-button class="sponsorInsta" (click)="visitInsta(item.title)">Instagram</button>
+            </div>
+        </mat-card>
+      </div>
+</div>
+<app-footer></app-footer>

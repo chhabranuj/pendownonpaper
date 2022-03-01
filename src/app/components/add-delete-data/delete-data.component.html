@@ -1,0 +1,14 @@
+<div class="deleteData">
+    <h3 class="title">Please Enter Details.</h3>
+    <form class="deleteDataForm" [formGroup]="deleteData">
+        <mat-form-field appearance="outline" class="name">
+            <mat-label>Name*</mat-label>
+            <input matInput placeholder="Enter Name..." formControlName="name" (input)="name()">
+        </mat-form-field>
+        <span class="caution" *ngIf="nameError">Please enter a name.</span>
+    </form>
+    <div class="btns">
+        <button mat-raised-button class="backBtn" (click)="back()">Back</button>
+        <button mat-raised-button class="deleteBtn" (click)="delete()">Delete</button>
+    </div>
+</div>

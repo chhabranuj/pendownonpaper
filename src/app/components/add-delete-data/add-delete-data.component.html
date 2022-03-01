@@ -1,0 +1,7 @@
+<div class="addDeleteData">
+    <mat-card class="data" *ngFor="let item of data">
+        <mat-card-title class="dataTitle">{{item.title}}</mat-card-title>
+        <mat-card-content class="dataContent">{{item.content}}</mat-card-content>
+        <button mat-raised-button class="dataBtn" (click)="addDeleteDataDialog(item.btn)">{{item.btn}}</button>
+    </mat-card>
+</div>

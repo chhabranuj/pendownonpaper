@@ -1,0 +1,15 @@
+<div class="footer">
+    <div class="disclaimer">
+        <h4 class="title">PenDownOnPaper</h4>
+        <p class="content">*Disclaimer:- All the images, drawings and paintings in this app are the property of creator and cannot be used anywhere without creator's knowledge. Hence legal actions can be taken if they are used illegally.</p>
+    </div>
+    <div class="visit">
+        <h4 class="linkTitle">Useful Links</h4>
+        <div class="visitLinks" *ngFor="let item of links">
+            <i class="{{item.icon}} link" (click)="visit(item.title)">&nbsp;{{item.title}}</i>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <i class="fa fa-copyright cright">&nbsp;2022 - pendownonpaper</i>
+</div>
