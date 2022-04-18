@@ -28,14 +28,14 @@
 .visit {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
 .visitLinks {
     margin: 3px 0;
     cursor: pointer;
-}
+}   
 
 .linkTitle {
     font-size: large;
